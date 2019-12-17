@@ -1,0 +1,293 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+.navbar .navbarLogo {
+  transform: translateY(20px);
+  flex-grow: 1;
+  margin-top: -30px;
+  margin-left: 50px;
+}
+.navbar #Hamburger {
+  display: none;
+}
+.navbar #Hamburger button {
+  background-color: red;
+}
+.navbar .HamburgerLabel {
+  display: none;
+}
+.navbar .HamburgerLabel:before {
+  font-size: 35px;
+  font-family: "FontAwesome";
+  margin-right: 5px;
+  content: "";
+  color: white;
+}
+.navbar .nav-links {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+.navbar .nav-links .nav-link {
+  margin-left: 23px;
+  margin-right: 23px;
+  list-style: none;
+}
+.navbar .nav-links .nav-link a {
+  color: white;
+  text-decoration: none;
+}
+.navbar .nav-links .nav-link a svg {
+  height: 15px;
+  width: 15px;
+}
+.navbar .nav-links .contact {
+  background-color: red;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+header {
+  height: 550px;
+  background: url("../../afbeeldingen/car-header.jpeg") bottom right;
+  background-size: cover;
+}
+header .jumbotron {
+  background: none;
+}
+header .jumbotron .headerText {
+  color: white;
+}
+header .jumbotron .headerText .headerTextLeft {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+header .jumbotron .headerText .headerTextLeft h3 {
+  font-size: 20px;
+}
+header .jumbotron .headerText .headerTextLeft .bekijkOpties {
+  padding: 0 10px 0 0;
+  color: white;
+  margin-top: 2em;
+  background: none;
+  border: none;
+  border-bottom: red solid;
+}
+
+.wrapper {
+  margin-top: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.wrapper .personenBus {
+  margin-bottom: 50px;
+}
+.wrapper .aside {
+  border-radius: 5px;
+  min-width: 260px !important;
+  max-width: 400px;
+  transform: translateY(-20px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #495057;
+  color: white;
+}
+.wrapper .aside .openingsTijden h4 {
+  color: white;
+}
+.wrapper .aside .openingsTijden p {
+  color: #d4d4d4;
+}
+.wrapper .aside .openingsTijden .row {
+  margin-left: 5px;
+  margin-right: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px white;
+}
+.wrapper .aside .openingsTijden .row:last-child {
+  border: none;
+}
+.wrapper .aside .openingsTijden .col-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.wrapper .directPersonenBusHuren {
+  margin: 100px auto 50px 0;
+}
+.wrapper .directPersonenBusHuren .col-md-3 {
+  text-align: center;
+}
+.wrapper .directPersonenBusHuren .col-md-3 .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  background-color: red;
+  padding: 50px;
+  border-radius: 100px;
+  margin: 0 auto 20px;
+}
+.wrapper .directPersonenBusHuren .col-md-3 .circle .zoeken:before {
+  font-size: 40px;
+  font-family: "FontAwesome";
+  content: "";
+  color: white;
+}
+.wrapper .directPersonenBusHuren .col-md-3 .circle .boeken:before {
+  font-size: 40px;
+  font-family: "FontAwesome";
+  content: "";
+  color: white;
+}
+.wrapper .directPersonenBusHuren .col-md-3 .circle .rijden:before {
+  font-size: 40px;
+  font-family: "FontAwesome";
+  content: "";
+  color: white;
+}
+.wrapper .directPersonenBusHuren .col-md-3 .circle .bert:before {
+  font-size: 40px;
+  font-family: "FontAwesome";
+  content: "";
+  color: white;
+}
+.wrapper .busOpties {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.wrapper .busOpties .text {
+  border-radius: 5px;
+  padding-top: 16px;
+  background-color: #495057;
+  color: white;
+}
+.wrapper .busOpties .card .card-text {
+  padding-left: 10px !important;
+}
+.wrapper .busOpties .card li {
+  list-style: none;
+}
+.wrapper .busOpties .card li:before {
+  font-family: "FontAwesome";
+  margin-right: 5px;
+  content: "";
+  color: black;
+}
+.wrapper .maatWerk {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.wrapper .benodigdeDocumenten {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.wrapper .verlaagRisico {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.wrapper .aanvullendeVerz {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.wrapper .werkGebieden {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.plaatjes {
+  margin: 0 !important;
+}
+.plaatjes .container-fluid {
+  background-color: #495057;
+  margin: 0 !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.plaatjes .container-fluid .col-xs-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plaatjes .container-fluid .col-xs-12 img {
+  overflow: scroll;
+}
+
+.carousel-cel {
+  width: 100%;
+}
+
+.flickity-page-dots {
+  bottom: -50px;
+}
+.flickity-page-dots .dot {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+}
+.flickity-page-dots .is-selected {
+  background-color: red;
+}
+
+footer .wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  background-color: #495057;
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .navbar .nav-links {
+    display: none !important;
+  }
+
+  .navbar .Hamburger {
+    display: block !important;
+  }
+
+  .navbar .Hamburger .HamburgerLabel {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 780px) {
+  .wrapper {
+    padding-left: 50px;
+  }
+
+  header .jumbotron .headerText .headerTextLeft {
+    margin-left: 0;
+  }
+
+  .aside {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+
+  .directPersonenBusHuren {
+    margin-top: 0 !important;
+  }
+  .directPersonenBusHuren .col-md-3 {
+    margin-top: 50px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

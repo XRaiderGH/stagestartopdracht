@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+
+  .navbarLogo {
+    transform: translateY(20px);
+    flex-grow: 1;
+    margin-top: -30px;
+    margin-left: 50px;
+  }
+
+  #Hamburger {
+    display: none;
+
+    button {
+      background-color: red;
+    }
+  }
+
+  .HamburgerLabel {
+    display: none;
+
+    &:before {
+      font-size: 35px;
+      font-family: 'FontAwesome';
+      margin-right: 5px;
+      content: '\f0c9';
+      color: white;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+
+    .nav-link {
+      margin-left: 23px;
+      margin-right: 23px;
+      list-style: none;
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        svg {
+          height: 15px;
+          width: 15px;
+        }
+      }
+    }
+
+    .contact {
+      background-color: red;
+      border-radius: 30px;
+      padding: 10px 20px;
+    }
+
+  }
+}
+
+header {
+  height: 550px;
+  background: url("../../afbeeldingen/car-header.jpeg") bottom right;
+  background-size: cover;
+
+  .jumbotron {
+    background: none;
+
+    .headerText {
+      color: white;
+
+      .headerTextLeft {
+        margin-left: 100px;
+        margin-top: 50px;
+
+        h3 {
+          font-size: 20px;
+        }
+
+        .bekijkOpties {
+          padding: 0 10px 0 0;
+          color: white;
+          margin-top: 2em;
+          background: none;
+          border: none;
+          border-bottom: red solid;
+        }
+      }
+    }
+
+  }
+
+}
+
+.wrapper {
+  margin-top: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+
+  //text onder de header
+  .personenBus {
+    margin-bottom: 50px;
+
+  }
+
+  //aside met openings tijden
+  .aside {
+    border-radius: 5px;
+    min-width: 260px !important;
+    max-width: 400px;
+    transform: translateY(-20px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #495057;
+    color: white;
+
+    .openingsTijden {
+      h4 {
+        color: white;
+      }
+
+      p {
+        color: #d4d4d4;
+      }
+
+      .row {
+        margin-left: 5px;
+        margin-right: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: solid 1px white;
+
+        &:last-child {
+          border: none;
+        }
+      }
+
+      .col-4 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  //ding met cirkels
+  .directPersonenBusHuren {
+    margin: 100px auto 50px 0;
+
+    .col-md-3 {
+      text-align: center;
+
+      .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        padding: 50px;
+        border-radius: 100px;
+        margin: 0 auto 20px;
+
+        .zoeken {
+          &:before {
+            font-size: 40px;
+            font-family: 'FontAwesome';
+            content: '\f002';
+            color: white;
+          }
+        }
+
+        .boeken {
+          &:before {
+            font-size: 40px;
+            font-family: 'FontAwesome';
+            content: '\f073';
+            color: white;
+          }
+        }
+
+        .rijden {
+          &:before {
+            font-size: 40px;
+            font-family: 'FontAwesome';
+            content: '\f1b9';
+            color: white;
+          }
+        }
+
+        .bert {
+          &:before {
+            font-size: 40px;
+            font-family: 'FontAwesome';
+            content: '\f087';
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  //lijst met busjes
+  .busOpties {
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    .text {
+      border-radius: 5px;
+      padding-top: 16px;
+      background-color: #495057;
+      color: white;
+    }
+
+    .card {
+
+      .card-text {
+        padding-left: 10px !important;
+      }
+
+      li {
+        //vinkjes toevoegen inplaats van bullet points
+        list-style: none;
+
+        &:before {
+          font-family: 'FontAwesome';
+          margin-right: 5px;
+          content: '\f00c';
+          color: black;
+        }
+      }
+    }
+  }
+
+  .maatWerk {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .benodigdeDocumenten {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .verlaagRisico {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .aanvullendeVerz {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .werkGebieden {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+}
+
+.plaatjes {
+  margin: 0 !important;
+  .container-fluid {
+    background-color: #495057;
+    margin: 0 !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .col-xs-12 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img{
+        overflow: scroll;
+      }
+    }
+  }
+}
+
+
+//carousel styles
+.carousel-cel {
+  width: 100%;
+}
+
+.flickity-page-dots {
+  bottom: -50px;
+
+  .dot {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+  }
+
+  .is-selected {
+    background-color: red;
+  }
+}
+
+footer{
+  .wrapper{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    background-color: #495057;
+  }
+}
+
+//media query 1000px
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .navbar .nav-links {
+    display: none !important;
+  }
+  .navbar .Hamburger {
+    display: block !important;
+  }
+
+  .navbar .Hamburger .HamburgerLabel {
+    display: block !important;
+  }
+}
+
+//media query 780px
+@media screen and (max-width: 780px) {
+  .wrapper {
+    padding-left: 50px;
+  }
+
+  header .jumbotron .headerText .headerTextLeft {
+    margin-left: 0;
+  }
+
+  .aside {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+
+  .directPersonenBusHuren {
+    margin-top: 0 !important;
+
+    .col-md-3 {
+      margin-top: 50px;
+    }
+  }
+
+}
+
